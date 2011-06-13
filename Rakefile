@@ -15,9 +15,9 @@ Rake::TestTask.new(:test) do |t|
 
 *** NOTICE ***
 
-All tests are done in the sample Rails app. 
+All tests are done in the sample Rails app.
 
-Please go to test/rails_app and run the tests there. 
+Please go to test/rails_app and run the tests there.
 
 Make sure to bundle install and rake db:migrate
 
@@ -33,20 +33,3 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-
-begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "devise_ldap_authenticatable"
-    gemspec.summary = "LDAP authentication module for Devise"
-    gemspec.description = "LDAP authentication module for Devise"
-    gemspec.email = "curtis.schiewek@gmail.com"
-    gemspec.homepage = "http://github.com/cschiewek/devise_ldap_authenticatable"
-    gemspec.authors = ["Curtis Schiewek", "Daniel McNevin"]
-    gemspec.add_runtime_dependency "devise", "1.1.2"
-    gemspec.add_runtime_dependency "net-ldap", "0.1.1"
-  end
-  Jeweler::GemcutterTasks.new
-rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
-end

@@ -1,4 +1,5 @@
 .bundle
+.project
 log
 *.sqlite3
 openldap-data
